@@ -8,19 +8,32 @@
   --body-font: 'Montserrat Alternates', sans-serif;
   --second-font: 'Grechen Fuemen', cursive;
 
-  --hue: 14;
-  --first-color: hsl(var(--hue), 80%, 49%);
+  --hue: 0;
+  --first-color: #ffffff; /* White for primary elements */
+  --first-color-alt: #cccccc; /* Light gray alternative */
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --text-color: #cccccc; /* Light gray text */
+  --body-color: #000000; /* Page background - black */
+  --container-color: #1a1a1a;
+  /* --first-color: hsl(var(--hue), 80%, 49%);
   --first-color-alt: hsl(var(--hue), 76%, 45%);
   --white-color: hsl(0, 0%, 98%);
   --black-color: hsl(0, 0%, 1%);
   --text-color: hsl(var(--hue), 2%, 66%);
   --body-color: hsl(var(--hue), 100%, 1%);
-  --container-color: hsl(var(--hue), 2%, 10%);
-  --conic-gradient: conic-gradient(
+  --container-color: hsl(var(--hue), 2%, 10%); */
+  /* --conic-gradient: conic-gradient(
     from 150deg at 50% 45%,
     hsl(var(--hue), 80%, 20%) 0deg,
     hsl(var(--hue), 80%, 48%) 140deg,
     hsl(var(--hue), 80%, 20%) 360deg
+  ); */
+  --conic-gradient: conic-gradient(
+    from 150deg at 50% 45%,
+    #1a1a1a 0deg,
+    #ffffff 140deg,
+    #1a1a1a 360deg
   );
 
   --biggest-font-size: 2.5rem;
@@ -201,7 +214,8 @@ img {
 .button {
   display: inline-flex;
   justify-content: center;
-  background-color: var(--first-color);
+  /* background-color: var(--first-color); */
+  background-color: black;
   color: var(--white-color);
   font-weight: var(--font-semi-bold);
   padding: 1.25rem 2.5rem;
@@ -237,7 +251,7 @@ img {
 .info__circle {
   width: 2rem;
   height: 2rem;
-  background-color: var(--first-color);
+  background-color: var(--text-color);
   border-radius: 50%;
 }
 
@@ -289,10 +303,10 @@ img {
   place-items: center;
   transition: background-color 0.4s, clor.4s;
 }
-.about__link:hover {
+/* .about__link:hover {
   background-color: var(--first-color);
   color: var(--white-color);
-}
+} */
 .about__image {
   background: var(--conic-gradient);
   height: 180px;
@@ -425,7 +439,8 @@ img {
 .services__circle {
   width: 3rem;
   height: 3rem;
-  background-color: var(--first-color);
+  /* background-color: var(--first-color); */
+  background-color: black;
   border-radius: 50%;
   position: absolute;
   top: -1rem;
@@ -541,18 +556,18 @@ img {
 .footer__social-link {
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--first-color);
-  color: var(--white-color);
+  background-color: var(--white-color);
+  color: var(--black-color);
   font-size: 1.5rem;
   border-radius: 50%;
   display: grid;
   place-items: center;
   transition: background-color 0.4s, color, 0.4s;
 }
-.footer__social-link:hover {
+/* .footer__social-link:hover {
   background-color: var(--white-color);
   color: var(--black-color);
-}
+} */
 .footer__copy {
   display: block;
   margin-top: 4.5rem;
