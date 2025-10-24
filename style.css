@@ -87,6 +87,11 @@ body {
   color: var(--white-color);
 }
 
+.bnwbg {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #ffffff 74%);
+}
+
 input,
 button,
 textarea {
@@ -178,7 +183,7 @@ img {
 /* main */
 .perfil {
   position: relative;
-  background: var(--conic-gradient);
+  /* background: var(--conic-gradient); */
   height: 415px;
   border-radius: 2rem;
   padding: 1rem;
@@ -268,7 +273,7 @@ img {
   overflow: hidden;
 }
 .info__img {
-  width: 140px;
+  width: 240px;
   justify-self: center;
   align-self: flex-end;
 }
@@ -342,6 +347,7 @@ img {
 .skills__item {
   width: 1.5rem;
   transition: transform 0.4s;
+  filter: grayscale(100%);
 }
 .skills__description {
   font-size: var(--small-font-size);
@@ -349,6 +355,7 @@ img {
 
 .skills__item:hover {
   transform: translateY(-0.25rem);
+  /* filter: grayscale(100%); */
 }
 
 /* project */
@@ -359,12 +366,14 @@ img {
 }
 .projects__card:hover .projects__img {
   transform: scale(1.2);
+  /* filter: grayscale(100%); */
 }
 .projects__image {
   display: block;
   overflow: hidden;
   border-radius: 1.5rem;
   margin-bottom: 1.5rem;
+  filter: grayscale(100%);
 }
 
 .projects__img {
@@ -389,6 +398,7 @@ img {
   column-gap: 0.75rem;
   border-radius: 4rem;
   margin-bottom: 1.5rem;
+  filter: grayscale(100%);
 }
 
 .projects__skill {
@@ -693,9 +703,15 @@ img {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
     padding: 2rem;
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center; /* Vertical center */
+    height: 100%;
   }
   .perfil__img {
-    width: 425px;
+    width: 925px;
+    max-width: 100%;
+    height: auto;
   }
   .perfil__data {
     width: 370px;

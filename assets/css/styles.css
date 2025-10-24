@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Montserrat+Alternates:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Montserrat+Alternates:wght@400;500;600&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -25,22 +25,24 @@
   --text-color: hsl(var(--hue), 2%, 66%);
   --body-color: hsl(var(--hue), 100%, 1%);
   --container-color: hsl(var(--hue), 2%, 10%);
-  --conic-gradient: conic-gradient(from 150deg at 50% 45%,
-                  hsl(var(--hue), 80%, 20%) 0deg,
-                  hsl(var(--hue), 80%, 48%) 140deg,
-                  hsl(var(--hue), 80%, 20%) 360deg);
+  --conic-gradient: conic-gradient(
+    from 150deg at 50% 45%,
+    hsl(var(--hue), 80%, 20%) 0deg,
+    hsl(var(--hue), 80%, 48%) 140deg,
+    hsl(var(--hue), 80%, 20%) 360deg
+  );
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Montserrat Alternates", sans-serif;
-  --second-font: "Grechen Fuemen", cursive;
+  --body-font: 'Montserrat Alternates', sans-serif;
+  --second-font: 'Grechen Fuemen', cursive;
   --biggest-font-size: 2.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -60,8 +62,8 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -96,7 +98,10 @@ textarea {
   outline: none;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--white-color);
   font-weight: var(--font-semi-bold);
 }
@@ -142,55 +147,38 @@ img {
 
 /*=============== NAV ===============*/
 
-
 /* Active link */
-
 
 /*=============== HOME ===============*/
 /*===== PERFIL =====*/
 
-
 /*===== INFO =====*/
-
 
 /*===== ABOUT =====*/
 
-
 /*===== SKILLS =====*/
-
 
 /*=============== BUTTON ===============*/
 
-
 /*=============== PROJECTS ===============*/
-
 
 /*=============== SERVICES ===============*/
 
-
 /*=============== EXPERIENCE ===============*/
-
 
 /*=============== CONTACT ===============*/
 
-
 /*=============== FOOTER ===============*/
-
 
 /*=============== SCROLL BAR ===============*/
 
-
 /*=============== SCROLL UP ===============*/
 
-
 /* Show Scroll Up */
-
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
-
 /* For medium devices */
-
 
 /* For large devices */
